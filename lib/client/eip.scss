@@ -1,0 +1,101 @@
+//Edit In Place
+
+.eip{
+	line-height: 20px;
+	position: relative;
+	overflow: auto;
+	width: 100%;
+
+	&.eip-lg{
+		line-height: 30px;
+		.eip-save{
+			display: none;
+		}
+
+		.eip-input{
+			text-transform: uppercase;
+			letter-spacing: 0.125em;
+			margin-top:-2px;
+		}
+
+	}
+
+	.eip-input{
+		display: none;
+		position: absolute;
+		top:0;
+		left:0;
+		// width:100%;
+		border:none;
+		padding:0;
+
+		border-bottom: 1px solid #000;
+		outline : none;
+		border-radius:0;
+	}
+
+	.eip-select{
+		-webkit-appearance: none;
+		-moz-appearance: window;
+
+	}
+
+	.eip-save{
+		display: none;
+	}
+
+	&.eip-lg.eip-active,
+	&.eip-active{
+		display: block;
+		.eip-value{
+			display: none;
+		}
+		.eip-trigger{
+			display: none;
+		}
+		.eip-save{
+			display: inline-block;
+			float:right;
+		}
+		.eip-input{
+			display: inline;
+		}
+	}
+
+}
+
+.eip-save,
+.eip-trigger{
+	cursor : pointer;
+	&.eip-save-right,
+	&.eip-trigger-right{
+		float: right;
+	}
+
+	svg{
+		height:20px;
+		width:20px;
+
+		transition: fill 0.2s ease;
+		&:hover{
+			fill : blue;
+		}
+
+	}
+
+	&.eip-btn-lg{
+
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		vertical-align: middle;
+
+		svg{
+			height:30px;
+			width:30px;
+		}
+	}
+
+}
+
+//Edit In Place Dropdown
