@@ -16,11 +16,11 @@ The easiest way to get started is to clone this repository and run the example c
 
 ## How It Works
 
-# Partials
+#### Partials
 
 To use Edit in Place simply include one of the partials included with the package. The following input types are available.
 
-### A basic text input
+##### A basic text input
 
 ```javascript
 {{> eipInput
@@ -30,7 +30,7 @@ To use Edit in Place simply include one of the partials included with the packag
 }}
 ```
 
-### A select input
+##### A select input
 
 ```javascript
 {{> eipSelect
@@ -42,7 +42,7 @@ To use Edit in Place simply include one of the partials included with the packag
 }}
 ```
 
-### A list of text inputs
+##### A list of text inputs
 
 ```javascript
 {{> eipList
@@ -52,7 +52,7 @@ To use Edit in Place simply include one of the partials included with the packag
 }}
 ```
 
-### Parameters
+#### Parameters
 
 At a minimum each partial requires the following parameters
 
@@ -70,7 +70,7 @@ At a minimum each partial requires the following parameters
 ]
 ```
 
-#### Optional
+##### Optional
 
 1. `reactive` : `Boolean` By default edit in place will not make any changes to values represented in the DOM. Making these changes is not the Meteor way of doing things, instead it will return changes back to you, so that you can update your collections and documents accordingly, those reactive changes will feedback into the Edit in Place partials. However if you don't want to do this you can set this parameter to `false`.
 
@@ -78,7 +78,7 @@ At a minimum each partial requires the following parameters
 
 3. `type` : `"String"`,`"Number"`,`"Date"` Specify how the value should be formated when returned back from Edit in Place.
 
-### Events
+#### Events
 
 Edit in place will trigger a number of custom events on changes to each partial, the events are
 
@@ -112,6 +112,4 @@ Template.hello.events({
 		this.collection.remove(this.item);
 	}
 });
-}
-
 ```
