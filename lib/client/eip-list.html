@@ -1,0 +1,11 @@
+<template name="eipList">
+	{{#with pullValues}}
+		<ul class="eip-list">
+		{{#each this}}
+			<li class="eip-list-item">
+				{{> eipListItem}}
+			</li>
+		{{/each}}
+	</ul>
+	{{/with}}
+</template>

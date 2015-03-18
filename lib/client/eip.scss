@@ -64,9 +64,9 @@
 
 }
 
-.eip-save,
-.eip-trigger{
+.eip-btn{
 	cursor : pointer;
+	&.eip-delete-right,
 	&.eip-save-right,
 	&.eip-trigger-right{
 		float: right;
@@ -98,4 +98,14 @@
 
 }
 
-//Edit In Place Dropdown
+.eip-list{
+	list-sytle:none;
+	margin:0;
+	padding:0;
+	> li.eip-list-item{
+		margin:0;
+		padding:0;
+	}
+}
+
+//Todo Edit In Place Dropdown

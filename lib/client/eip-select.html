@@ -1,12 +1,13 @@
 <template name="eipSelect">
 <div class="eip">
-	<span data-value="{{value}}" class="eip-value">{{label}}</span>
+	<span data-value="{{value}}" class="eip-value">{{currentLabel}}</span>
 	<select class="eip-input eip-select">
 	{{#each options}}
-		<option value="{{value}}">{{label}}</option>
+			<option value="{{value}}">{{label}}</option>
 	{{/each}}
 </select>
-	<span class="eip-trigger eip-trigger-right">{{> eip_pencil}}</span>
-	<span class="eip-save eip-save-right">{{> eip_check}}</span>
+	<span class="eip-btn eip-trigger eip-trigger-right">{{> eip_pencil}}</span>
+	<span class="eip-btn eip-save eip-save-right">{{> eip_check}}</span>
 </div>
+
 </template>

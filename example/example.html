@@ -1,5 +1,10 @@
 <head>
 	<title>Edit In Place example</title>
+	<style type="text/css">
+	body{
+		font-family: sans-serif;
+	}
+	</style>
 </head>
 
 <body>
@@ -13,22 +18,27 @@
 	<h2>Text Input</h2>
 
 	{{> eipInput
-		label="my label"
 		collection="Books"
-		attr="something"
-		value="something else"
+		item=book
+		attribute="title"
 	}}
-
-
 
 	<h2>Select Input</h2>
 
 	{{> eipSelect
-		label="my label"
-		collection="Books"
-		attr="something"
-		value=2
-		options=myOptions
+		collection="Colors"
+		item=color
+		attribute="value"
+		type="Number"
+		options=colorOptions
 	}}
 
+	<h2>List</h2>
+	{{> eipList
+		collection="Books"
+		list=books
+		attribute="title"
+	}}
 </template>
+
+<!-- value=2 -->

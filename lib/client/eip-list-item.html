@@ -1,14 +1,18 @@
-<template name="eipInput">
+<template name="eipListItem">
 
-<div class="eip">
+	<div class="eip">
 	<span data-value="{{value}}" class="eip-value">{{value}}</span>
 	<input type="text" class="eip-input">
+	<span class="eip-delete eip-delete-right eip-btn">
+		{{> eip_delete}}
+	</span>
 	<span class="eip-trigger eip-trigger-right eip-btn">
 		{{> eip_pencil}}
 	</span>
 	<span class="eip-save eip-save-right eip-btn">
 		{{> eip_check}}
 	</span>
+
 </div>
 
 </template>
