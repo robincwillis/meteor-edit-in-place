@@ -46,8 +46,6 @@ if (Meteor.isClient) {
       if(this.reactive !== false){
         var obj = {};
         obj[this.attribute] = this.value;
-        console.log(obj);
-
         this.collection.update(this.item._id, obj);
       }
       console.log('----');
