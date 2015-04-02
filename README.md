@@ -111,3 +111,15 @@ Template.hello.events({
 	}
 });
 ```
+#### Custom Events
+
+You can override any of the events triggered by specifying custom events as parameters in the template. This lets you listen for events on individual inputs rather than all inputs.
+
+1. `customTrigger` : `"String"`
+2. `customSave` : `"String"`
+3. `customBlur` : `"String"`
+4. `customChange` : `"String"`
+5. `customDelete` : `"String"`
+
+
+
