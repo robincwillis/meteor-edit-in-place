@@ -39,6 +39,16 @@
 		list=books
 		attribute="title"
 	}}
+
+	<h2>CustomEvents</h2>
+
+	{{> eipInput
+		collection="Books"
+		item=book
+		attribute="title"
+		customTrigger="doThisTrigger"
+		customSave="doThisSave"
+	}}
+
 </template>
 
-<!-- value=2 -->

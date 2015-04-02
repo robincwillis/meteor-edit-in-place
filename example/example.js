@@ -70,7 +70,28 @@ if (Meteor.isClient) {
         this.collection.remove(this.item);
       }
       console.log('----');
-    }
+    },
+
+    'doThisTrigger' : function(e, t){
+      console.log('----');
+      console.log('CUSTOM TRIGGER');
+      console.log(this);
+      console.log('----');
+
+    },
+    'doThisSave' : function(e, t){
+      console.log('----');
+      console.log('CUSTOM SAVE');
+      console.log(this);
+      if(this.reactive !== false){
+        var obj = {};
+        obj[this.attribute] = this.value;
+        this.collection.update(this.item._id, obj);
+      }
+      console.log('----');
+    },
+
+
   });
 }
 
