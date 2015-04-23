@@ -108,4 +108,19 @@
 	}
 }
 
+.eip-group{
+	list-style:none;
+	margin:0;
+	padding:0;
+	.eip-group-item{
+		.eip{
+			min-height:20px;
+			input.eip-input{
+				width:100%;
+
+			}
+		}
+	}
+}
+
 //Todo Edit In Place Dropdown

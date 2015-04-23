@@ -1,6 +1,6 @@
 Package.describe({
   name: 'robincwillis:edit-in-place',
-  version: '0.0.3',
+  version: '0.0.5',
   // Brief, one-line summary of the package.
   summary: 'A simple edit in place package for Meteor.',
   // URL to the Git repository containing the source code for this package.
@@ -25,6 +25,8 @@ Package.onUse(function(api) {
     'lib/client/eip-list-item.html',
     'lib/client/eip-input.html',
     'lib/client/eip-select.html',
+    'lib/client/eip-group.html',
+    'lib/client/eip-group-item.html',
     'lib/client/eip.scss',
     'lib/client/icons/_pencil.html',
     'lib/client/icons/_check.html',

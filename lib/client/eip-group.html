@@ -1,0 +1,21 @@
+<template name="eipGroup">
+	<div class="eip">
+		<span class="eip-label">{{label}}</span>
+		<span class="eip-trigger eip-trigger-right eip-btn">
+			{{> eip_pencil}}
+		</span>
+		<span class="eip-save eip-save-right eip-btn">
+			{{> eip_check}}
+		</span>
+
+	{{#with pullValues}}
+	<ul class="eip-group">
+		{{#each this}}
+		<li class="eip-group-item">
+			{{> eipGroupItem}}
+		</li>
+		{{/each}}
+	</ul>
+	{{/with}}
+	</div>
+</template>

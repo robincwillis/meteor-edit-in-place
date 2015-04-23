@@ -1,7 +1,8 @@
 <template name="eipInput">
 
 <div class="eip">
-	<span data-value="{{value}}" class="eip-value">{{value}}</span>
+	<span data-value="{{this.value}}" class="eip-value">{{value}}
+	</span>
 	<input type="text" class="eip-input">
 	<span class="eip-trigger eip-trigger-right eip-btn">
 		{{> eip_pencil}}

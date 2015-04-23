@@ -38,7 +38,7 @@ reactive-dict@1.0.5
 reactive-var@1.0.4
 reload@1.1.2
 retry@1.0.2
-robincwillis:edit-in-place@0.0.3
+robincwillis:edit-in-place@0.0.5
 routepolicy@1.0.4
 session@1.0.5
 spacebars@1.0.5
