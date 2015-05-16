@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Meteor Edit In Place</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body>
+	<div class="header">
+    {% include header.html %}
+	</div>
+	<div class="readme">
+		{{content}}
+	</div>
+	<div class="footer">
+    {% include footer.html %}
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="assets/js/markdown.min.js"></script>
+	<script type="text/javascript">
+
+	// var init = function(data){
+	// 	$('.readme').append( markdown.toHTML( data ) );
+	// }
+
+	// $.ajax({
+	//       url: "README.md",
+	//       //dataType: "json",
+	//       success: init
+	// });
+
+	</script>
+
+</body>
+</html>
