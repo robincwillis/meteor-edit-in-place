@@ -1,4 +1,11 @@
-
+---
+layout: default
+title: Readme
+permalink: /
+---
+<!--
+{% raw %}
+ -->
 
 # Edit In Place
 
@@ -124,4 +131,6 @@ You can override any of the events triggered by specifying custom events as para
 5. `customDelete` : `"String"`
 
 
-
+<!--
+{% endraw %}
+-->
