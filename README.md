@@ -20,7 +20,6 @@ To use Edit in Place simply include one of the partials included with the packag
 
 ##### A basic text input
 
-{% raw %}
 ```javascript
 {{> eipInput
 	collection="Books"
@@ -28,7 +27,6 @@ To use Edit in Place simply include one of the partials included with the packag
 	attribute="title"
 }}
 ```
-{% endraw %}
 
 ##### A select input
 
