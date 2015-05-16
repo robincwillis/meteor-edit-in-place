@@ -26,7 +26,13 @@ The easiest way to get started is to clone this repository and run the example c
 To use Edit in Place simply include one of the partials included with the package. The following input types are available.
 
 ##### A basic text input
+		{% raw %}
 
 ```javascript
-var something = "cool";
+{{> eipInput
+	collection="Books"
+	item=book
+	attribute="title"
+}}
 ```
+		{% endraw %}
