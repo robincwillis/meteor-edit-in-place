@@ -1,15 +1,29 @@
+<!--
+{% raw %}
+ -->
+
 # Edit In Place
+###Small and Flexible edit in place components for meteor.
+
+```sh
+meteor add robincwillis:edit-in-place
+```
+
+##What it do
 
 Edit in place is a Meteor package that provides UI elements to easily edit values in line. It can be used both reactively or not. It does not automatically insert, update or delete documents but rather triggers events and sends changes made which then you can listen to and do what you want with the changes, ie call a Meteor method, run some validation, whatever.
+
+<a class="lead center" target="_blank" href="http://edit-in-place.meteor.com/
+">Example</a>
 
 ## Getting Started
 
 The easiest way to get started is to clone this repository and run the example code
 
 ```sh
-> git clone git@github.com:robincwillis/meteor-edit-in-place.git
-> cd meteor/edit-in-place/example
-> meteor
+$ git clone git@github.com:robincwillis/meteor-edit-in-place.git
+$ cd meteor/edit-in-place/example
+$ meteor
 ```
 
 ## How It Works
@@ -122,4 +136,6 @@ You can override any of the events triggered by specifying custom events as para
 5. `customDelete` : `"String"`
 
 
-
+<!--
+{% endraw %}
+-->
