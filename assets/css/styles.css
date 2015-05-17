@@ -1,13 +1,284 @@
 
 body{
-	margin:50px;
+	margin:0;
 	font-family: 'Open Sans', sans-serif;
+	padding-top:50px;
+	background: #fbfbfb;
+	font-size: 16px;
+	color: #555555;
+	font-weight: 300;
 }
 
 *{
 	box-sizing:border-box;
 }
 
-code, pre {
-	background: pink;
+.center{
+	text-align: center;
 }
+
+/* header */
+
+header{
+	background: rgba(255,255,255,0.95);
+	padding:10px 0;
+	position: fixed;
+	width:100%;
+	top:0;
+}
+
+nav{
+	float:right;
+}
+
+.site-title,
+header nav a{
+	margin-left:10px;
+	padding-top:7px;
+	transition: border 0.2s ease-in-out;
+}
+
+.site-title:hover,
+header nav a:hover{
+	border-top: 3px solid #9400D3;
+}
+
+.site-title{
+	margin-left:0;
+}
+
+/* footer */
+
+  footer .nav{
+  	margin : 50px 0;
+    height:75px;
+  }
+
+
+li.social{
+    display: inline-block;
+    margin-right:10px;
+    width:75px;
+    height:75px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+li.social a{
+    position:relative;
+    display: block;
+    width:100%;
+    height:100%;
+}
+
+.social-inner{
+    -webkit-transition: -webkit-transform 0.1s ease-in-out;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-15px;
+    margin-left:-15px;
+    width:30px;
+    height:30px;
+}
+
+li.social a:hover{
+    background:transparent;
+}
+
+li a:hover .social-inner{
+    -webkit-transform:scale(1.25);
+}
+
+.twitter{
+    background: url(http://s3.amazonaws.com/robincwillis/img/t_social.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.facebook{
+    background: url(http://s3.amazonaws.com/robincwillis/img/fb_social.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.github{
+    background: url(http://s3.amazonaws.com/robincwillis/img/gh_social.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.linkedin{
+    background: url(http://s3.amazonaws.com/robincwillis/img/li_social.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.instagram{
+    background: url(http://s3.amazonaws.com/robincwillis/img/i_social.svg) center center no-repeat;
+    background-size: contain;
+}
+
+/* container */
+
+.container{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+
+@media (max-width:900px){
+	.container{
+		margin-left:50px;
+		margin-right:50px;
+	}
+}
+
+
+/* content */
+
+li p, p{
+	line-height: 28px;
+}
+
+h1, h2, h3, h4{
+	margin: 10px 0;
+	font-family: inherit;
+	font-weight: 300;
+	color: #080808;
+	text-rendering: optimizelegibility;
+}
+
+h1{
+	line-height: 60px;
+	font-size: 54px;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+}
+
+h2{
+	font-weight: 400;
+	font-size: 26px;
+}
+h3{
+	font-weight: 300;
+	color: #AEAEAE;
+}
+
+ul{
+	color: #323A45;
+}
+
+a{
+	color: #007fff;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+
+a:hover{
+	color : #9400D3;
+}
+
+a:active{
+	color : #9400D3;
+
+}
+
+
+.lead{
+	font-size: 28px;
+	display: block;
+}
+
+
+/* Syntax */
+
+.highlight { background-color: #ffffcc }
+
+pre{
+    white-space: pre;
+    overflow-x: auto;
+    word-break: inherit;
+    word-wrap: inherit;
+    margin-bottom: 30px;
+ 	 font-family : Consolas, 'Inconsolata', "Liberation Mono", Menlo, Courier, monospace;
+
+}
+
+code {
+    border-radius: 0;
+    padding: 0;
+    line-height: 23px;
+        font-family : Consolas, 'Inconsolata', "Liberation Mono", Menlo, Courier, monospace;
+
+		font-size: 16px;
+		line-height: 1.45;
+		background-color: #f8f8f8;
+}
+
+/*
+ * GitHub style for Pygments syntax highlighter, for use with Jekyll
+ * Courtesy of GitHub.com
+ */
+
+.highlight pre, pre, .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 16px; border-radius: 3px; }
+.highlight .c { color: #999988; font-style: italic; }
+.highlight .err { color: #a61717; background-color: #e3d2d2; }
+.highlight .k { font-weight: bold; color : #ed6a43; }
+.highlight .o { font-weight: bold; color: #a71d5d;}
+.highlight .cm { color: #999988; font-style: italic; }
+.highlight .cp { color: #999999; font-weight: bold; }
+.highlight .c1 { color: #999988; font-style: italic; }
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic; }
+.highlight .gd { color: #000000; background-color: #ffdddd; }
+.highlight .gd .x { color: #000000; background-color: #ffaaaa; }
+.highlight .ge { font-style: italic; }
+.highlight .gr { color: #aa0000; }
+.highlight .gh { color: #999999; }
+.highlight .gi { color: #000000; background-color: #ddffdd; }
+.highlight .gi .x { color: #000000; background-color: #aaffaa; }
+.highlight .go { color: #888888; }
+.highlight .gp { color: #555555; }
+.highlight .gs { font-weight: bold; }
+.highlight .gu { color: #800080; font-weight: bold; }
+.highlight .gt { color: #aa0000; }
+.highlight .kc { font-weight: bold; }
+.highlight .kd { font-weight: bold; color : #a71d5d; }
+.highlight .kn { font-weight: bold; }
+.highlight .kp { font-weight: bold; }
+.highlight .kr { font-weight: bold; }
+.highlight .kt { color: #445588; font-weight: bold; }
+.highlight .m { color: #009999; }
+.highlight .s { color: #dd1144; }
+.highlight .n { color: #333333; }
+.highlight .na { color: teal; }
+.highlight .nb { color: #0086b3; }
+.highlight .nc { color: #445588; font-weight: bold; }
+.highlight .no { color: teal; }
+.highlight .ni { color: purple; }
+.highlight .ne { color: #990000; font-weight: bold; }
+.highlight .nf { color: #990000; font-weight: bold; }
+.highlight .nn { color: #555555; }
+.highlight .nt { color: navy; }
+.highlight .nv { color: teal; }
+.highlight .ow { font-weight: bold; }
+.highlight .w { color: #bbbbbb; }
+.highlight .mf { color: #009999; }
+.highlight .mh { color: #009999; }
+.highlight .mi { color: #009999; }
+.highlight .mo { color: #009999; }
+.highlight .sb { color: #dd1144; }
+.highlight .sc { color: #dd1144; }
+.highlight .sd { color: #dd1144; }
+.highlight .s2 { color: #dd1144; }
+.highlight .se { color: #dd1144; }
+.highlight .sh { color: #dd1144; }
+.highlight .si { color: #dd1144; }
+.highlight .sx { color: #dd1144; }
+.highlight .sr { color: #009926; }
+.highlight .s1 { color: #795da3; }
+.highlight .ss { color: #990073; }
+.highlight .bp { color: #999999; }
+.highlight .vc { color: teal; }
+.highlight .vg { color: teal; }
+.highlight .vi { color: teal; }
+.highlight .il { color: #009999; }
+.highlight .gc { color: #999; background-color: #EAF2F5; }
+
+
